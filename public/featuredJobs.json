@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Software Engineer",
+        "companyName": "Example Inc.",
+        "location": "San Francisco, CA",
+        "remote": false,
+        "fulltime": true,
+        "salary": "$120,000 - $150,000",
+        "jobDescription": "We are seeking a talented software engineer to join our team...",
+        "jobResponsibility": "Design and implement new features for our web application...",
+        "educationalRequirements": "Bachelor's degree in computer science or equivalent...",
+        "experience": "3+ years of experience in software engineering...",
+        "contactInfo": {
+            "phone": "555-123-4567",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": 2,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Marketing Manager",
+        "companyName": "Example Inc.",
+        "location": "New York, NY",
+        "remote": true,
+        "fulltime": true,
+        "salary": "$90,000 - $120,000",
+        "jobDescription": "We are seeking an experienced marketing manager to lead our team...",
+        "jobResponsibility": "Develop and implement marketing strategies to drive revenue...",
+        "educationalRequirements": "Bachelor's degree in marketing or related field...",
+        "experience": "5+ years of experience in marketing management...",
+        "contactInfo": {
+            "phone": "555-123-4567",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": 3,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Product Designer",
+        "companyName": "Example Inc.",
+        "location": "Seattle, WA",
+        "remote": false,
+        "fulltime": true,
+        "salary": "$100,000 - $130,000",
+        "jobDescription": "We are seeking a talented product designer to join our team...",
+        "jobResponsibility": "Design and prototype new features for our mobile app...",
+        "educationalRequirements": "Bachelor's degree in design or related field...",
+        "experience": "3+ years of experience in product design...",
+        "contactInfo": {
+            "phone": "555-123-4567",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": 4,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Sales Representative",
+        "companyName": "Example Inc.",
+        "location": "Chicago, IL",
+        "remote": false,
+        "fulltime": false,
+        "salary": "$40,000 - $60,000 (base + commission)",
+        "jobDescription": "We are seeking a motivated sales representative to join our team...",
+        "jobResponsibility": "Prospect and close deals with new customers...",
+        "educationalRequirements": "High school diploma or equivalent...",
+        "experience": "1+ years of experience in sales...",
+        "contactInfo": {
+            "phone": "555-123-4567",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": 5,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Data Analyst",
+        "companyName": "Example Inc.",
+        "location": "Boston, MA",
+        "remote": false,
+        "fulltime": true,
+        "salary": "$80,000 - $100,000",
+        "jobDescription": "We are seeking a skilled data analyst to join our team...",
+        "jobResponsibility": "Collect, analyze, and interpret large datasets to help drive business decisions...",
+        "educationalRequirements": "Bachelor's degree in a quantitative field (e.g. mathematics, statistics, computer science)...",
+        "experience": "2+ years of experience in data analysis...",
+        "contactInfo": {
+            "phone": "555-123-4567",
+            "email": "jobs@example.com"
+        }
+    },
+    {
+        "id": 6,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "UX Researcher",
+        "companyName": "Example Inc.",
+        "location": "Austin, TX",
+        "remote": true,
+        "fulltime": true,
+        "salary": "$90,000 - $120,000",
+        "jobDescription": "We are seeking a talented UX researcher to join our team...",
+        "jobResponsibility": "Design and conduct user research studies to inform product design decisions...",
+        "educationalRequirements": "Bachelor's degree in psychology, human-computer interaction, or related field...",
+        "experience": "3+ years of experience in UX research...",
+        "contactInfo": {
+            "phone": "555-123-4567",
+            "email": "jobs@example.com"
+        }
+    }
+]
