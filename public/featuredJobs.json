@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "companyLogo": "https://example.com/logo.png",
+        "companyLogo": "https://media.istockphoto.com/id/1390300647/photo/blue-sign-business.jpg?b=1&s=170667a&w=0&k=20&c=YeLzTERk7THh4SaXg2UA4S9FKFFffJdQG_tE6LWIZus=",
         "jobTitle": "Software Engineer",
-        "companyName": "Example Inc.",
+        "companyName": "Microsoft Inc.",
         "location": "San Francisco, CA",
         "remote": false,
         "fulltime": true,
@@ -14,14 +14,14 @@
         "experience": "3+ years of experience in software engineering...",
         "contactInfo": {
             "phone": "555-123-4567",
-            "email": "jobs@example.com"
+            "email": "microsoft@yahoo.com"
         }
     },
     {
         "id": 2,
-        "companyLogo": "https://example.com/logo.png",
+        "companyLogo": "https://media.istockphoto.com/id/929462822/photo/marketing-sign.jpg?s=612x612&w=is&k=20&c=yp9EKQ0wfvQfxrpYPts_xDkxKfjT6jYIrEODQFYqqgI=",
         "jobTitle": "Marketing Manager",
-        "companyName": "Example Inc.",
+        "companyName": "Apple Inc.",
         "location": "New York, NY",
         "remote": true,
         "fulltime": true,
@@ -32,14 +32,14 @@
         "experience": "5+ years of experience in marketing management...",
         "contactInfo": {
             "phone": "555-123-4567",
-            "email": "jobs@example.com"
+            "email": "apple@gmail.com"
         }
     },
     {
         "id": 3,
-        "companyLogo": "https://example.com/logo.png",
+        "companyLogo": "https://media.istockphoto.com/id/1403956647/photo/now-its-time-for-vacation.jpg?b=1&s=170667a&w=0&k=20&c=9UYOCVyGv6L4bcpYZm8Jcho_UDy_3jgoj3Ji3JJbe00=",
         "jobTitle": "Product Designer",
-        "companyName": "Example Inc.",
+        "companyName": "Amazon Inc.",
         "location": "Seattle, WA",
         "remote": false,
         "fulltime": true,
@@ -50,14 +50,14 @@
         "experience": "3+ years of experience in product design...",
         "contactInfo": {
             "phone": "555-123-4567",
-            "email": "jobs@example.com"
+            "email": "amazon@hotmail.com"
         }
     },
     {
         "id": 4,
-        "companyLogo": "https://example.com/logo.png",
+        "companyLogo": "https://media.istockphoto.com/id/1201640982/photo/rainbow-sign.jpg?b=1&s=170667a&w=0&k=20&c=fSAtdlQFAAl7GoTBqd8h96OfsB8jpsMB4HOFScq8RmA=",
         "jobTitle": "Sales Representative",
-        "companyName": "Example Inc.",
+        "companyName": "TESLR Inc.",
         "location": "Chicago, IL",
         "remote": false,
         "fulltime": false,
@@ -68,14 +68,14 @@
         "experience": "1+ years of experience in sales...",
         "contactInfo": {
             "phone": "555-123-4567",
-            "email": "jobs@example.com"
+            "email": "teslr@yahoo.com"
         }
     },
     {
         "id": 5,
-        "companyLogo": "https://example.com/logo.png",
+        "companyLogo": "https://media.istockphoto.com/id/1209285537/photo/grocery-sign.jpg?b=1&s=170667a&w=0&k=20&c=hc3lN7tzV3tJhpWWngwUP_QKc7twTCVQjZg9REQxFPE=",
         "jobTitle": "Data Analyst",
-        "companyName": "Example Inc.",
+        "companyName": "Google Inc.",
         "location": "Boston, MA",
         "remote": false,
         "fulltime": true,
@@ -86,14 +86,14 @@
         "experience": "2+ years of experience in data analysis...",
         "contactInfo": {
             "phone": "555-123-4567",
-            "email": "jobs@example.com"
+            "email": "google@gmail.com"
         }
     },
     {
         "id": 6,
-        "companyLogo": "https://example.com/logo.png",
+        "companyLogo": "https://media.istockphoto.com/id/941582536/photo/economic-letter-in-the-billboard-led-display-panel.jpg?s=1024x1024&w=is&k=20&c=yvy10x3kyO7aSM_HpXYBC0Od7YfpPniC7uDzQAPKRp0=",
         "jobTitle": "UX Researcher",
-        "companyName": "Example Inc.",
+        "companyName": "Netflix Inc.",
         "location": "Austin, TX",
         "remote": true,
         "fulltime": true,
@@ -104,7 +104,7 @@
         "experience": "3+ years of experience in UX research...",
         "contactInfo": {
             "phone": "555-123-4567",
-            "email": "jobs@example.com"
+            "email": "netflix@yahoo.com"
         }
     }
 ]
