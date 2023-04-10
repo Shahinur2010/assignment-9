@@ -33,6 +33,9 @@ const Home = () => {
             <h1 className='font-bold text-3xl text-center'>Featured Jobs</h1>
             <p className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <FeaturedJobs featuredJobs={featuredJobs}></FeaturedJobs>
+            <div className='text-center'>
+            <button className='bg-violet-200 rounded-md p-2 my-4'>See All Jobs</button>
+            </div>
         </div>
     );
 };

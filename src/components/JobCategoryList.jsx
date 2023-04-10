@@ -35,7 +35,7 @@ const JobCategoryList = () => {
                 jobs?.map(job=>{
                     
                     return <div key={job.id}>
-                        <img src={job.categoryLogo} alt="" />
+                        <img className='w-12 h-8' src={job.categoryLogo} alt="" />
                         <h1>{job.categoryName}</h1>
                         <p>{job.jobsAvailable}</p>
                     </div>
