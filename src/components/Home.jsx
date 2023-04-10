@@ -10,8 +10,10 @@ const Home = () => {
         <div>
             <div className='grid grid-cols-1 md:grid-cols-2 my-4 p-6'>
                 <div>
-                    <h1 >
-                        One Step Closer To Your Dream Job
+                    <h1 className='text-4xl font-semibold pb-4'>
+                        One Step
+                        <br/>
+                        Closer To Your <br/><span className='text-cyan-200 '>Dream Job</span>
                     </h1>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                     <button className='bg-violet-200 rounded-md p-2'>Get Started</button>
@@ -21,11 +23,11 @@ const Home = () => {
                     
                 </div>
             </div>
-            <div>
-                <h1>Job Category List</h1>
+            <div className='text-center my-4'>
+                <h1 className='font-bold text-3xl'>Job Category List</h1>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div>
-                    {/* <JobCategoryList jobCategoryList={jobCategoryList}></JobCategoryList> */}
+                    <JobCategoryList ></JobCategoryList>
                 </div>
             </div>
             <h1 className='font-bold text-3xl text-center'>Featured Jobs</h1>
