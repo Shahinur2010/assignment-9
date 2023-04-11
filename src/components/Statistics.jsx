@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const Statistics = () => {
     const marks = useLoaderData();
-    console.log(marks)
+
     return (
         <div>
             <h1 className='text-center font-bold text-3xl my-3'>Assignment Marks</h1>
