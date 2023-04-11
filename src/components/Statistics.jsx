@@ -8,7 +8,7 @@ const Statistics = () => {
     return (
         <div>
             <h1 className='text-center font-bold text-3xl my-3'>Assignment Marks</h1>
-            <AreaChart
+            <AreaChart className='mx-auto my-8'
           width={500}
           height={400}
           data={marks}
