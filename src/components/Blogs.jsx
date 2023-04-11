@@ -3,6 +3,7 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div className='text-xl font-semibold my-6 p-4'>
+            <h1 className='text-center font-bold text-3xl my-6'>Answers of the required questions</h1>
             <div className='my-4'>1. React's Context API is a popular choice for global state. The React Context API is designed for prop drilling· This means that the props can be accessed from any component. It makes it possible to pass data from parent to children nested deep down the component tree directly, instead of passing it down through a chain of props.
             </div>
             <div className='my-4'>2. Hooks are reusable functions. Custom Hooks are functions. Usually, they start with the word “use” (important convention). Custom React hooks are an essential tool that can add special, unique functionality to the React applications. When component logic that needs to be used by multiple components, we can extract that logic to a custom Hook.

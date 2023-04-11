@@ -28,14 +28,14 @@ const  jobs = [
     ];
 
 const JobCategoryList = () => {  
-    console.log(jobs) 
+     
     return (
-        <div>
+        <div className='flex flex-col items-center justify-center md:flex-row my-4 p-6'>
             {
                 jobs?.map(job=>{
                     
-                    return <div key={job.id}>
-                        <img className='w-12 h-8' src={job.categoryLogo} alt="" />
+                    return <div key={job.id} className='p-6 gap-4'>
+                        <img className='w-12 h-8 ms-10' src={job.categoryLogo} alt="" />
                         <h1>{job.categoryName}</h1>
                         <p>{job.jobsAvailable}</p>
                     </div>
