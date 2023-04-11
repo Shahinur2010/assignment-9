@@ -5,7 +5,7 @@ const FeaturedJob = ({ featuredJob }) => {
     
     const { id, companyLogo, jobTitle, companyName, contactInfo, educationalRequirements, experience, fulltime, jobDescription, jobResponsibility, remote, salary,location } = featuredJob;
     return (
-        <div className='p-4 bg-purple-300'>
+        <div className='p-8 bg-purple-300'>
             <img className='w-36 rounded-md mx-auto' src={companyLogo} alt="" />
             <h1>{jobTitle}</h1>
             <p>{companyName}</p>

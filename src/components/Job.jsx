@@ -1,44 +1,45 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faAddressBook, faMoneyBill, faPhone, faPlaceOfWorship, faVoicemail } from '@fortawesome/free-solid-svg-icons'
+import { faAddressBook, faMoneyBill, faPhone, faStarOfLife, faVoicemail } from '@fortawesome/free-solid-svg-icons'
 
 
 const Job = () => {
-    const detail = useParams();
-    console.log(detail.id)
-    const [singleJob, setSingleJob] = useState([]);
+    const { id } = useParams();
+
+    const detail = useLoaderData();
+
+const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('./featuredJobs.json')
-            .then(res => res.json())
-            .then(data => setSingleJob(data))
+        if (detail) {
+            const jobDetails = detail.find(data => data.id == id)
+            setData(jobDetails)
+        }
     }, [])
-
-    const selectedJob = singleJob.find(item => item.id == detail.id)
-    console.log(selectedJob)
-    console.log(singleJob)
-
+    
+    const { educationalRequirements, jobDescription, jobResponsibility, experience, salary, jobTitle, contactInfo, location } = data;
+    
     return (
         <div>
-            <h1 className='text-center font-bold text-4xl my-2'>Job Details</h1>
+            <h1 className='text-center font-semibold text-4xl my-2'>Job Details</h1>
             <div className='flex'>
                 <div className='text-start my-2 p-4'>
-                    <p>Job description: {selectedJob.jobDescription}</p>
-                    <p>Job Responsibility: {selectedJob.jobResponsibility}</p>
-                    <p>Educational Requirements: {selectedJob.educationalRequirements
+                    <p>Job description: {jobDescription}</p>
+                    <p>Job Responsibility: {jobResponsibility}</p>
+                    <p>Educational Requirements: {educationalRequirements
                     }</p>
-                    <p>Experience: {selectedJob.experience}</p>
+                    <p>Experience: {experience}</p>
                 </div>
                 <div className='text-center'>
                     <h1>Job Details</h1>
-                    <p>Salary: <FontAwesomeIcon className='w-6 h-6' icon={faMoneyBill}/>{selectedJob.salary}</p>
-                    <p>Job Title: <FontAwesomeIcon className='w-6 h-6' icon={faPlaceOfWorship}/>{selectedJob.jobTitle}</p>
+                    <p>Salary: <FontAwesomeIcon className='w-6 h-6' icon={faMoneyBill} />{salary}</p>
+                    <p>Job Title: <FontAwesomeIcon className='w-6 h-6' icon={faStarOfLife} />{jobTitle}</p>
                     <br />
                     <h1>Contact Information</h1>
-                    <p>Phone: <FontAwesomeIcon className='w-6 h-6' icon={faPhone} />{selectedJob.contactInfo.phone}</p>
-                    <p>Email: <FontAwesomeIcon className='w-6 h-6' icon={faVoicemail} />{selectedJob.contactInfo.email}</p>
-                    <p>Address: <FontAwesomeIcon className='w-6 h-6' icon={faAddressBook}/>{selectedJob.location}</p>
+                    <p>Phone: <FontAwesomeIcon className='w-6 h-6' icon={faPhone} />{contactInfo?.phone}</p>
+                    <p>Email: <FontAwesomeIcon className='w-6 h-6' icon={faVoicemail} />{contactInfo?.email}</p>
+                    <p>Address: <FontAwesomeIcon className='w-6 h-6' icon={faAddressBook} />{location}</p>
                 </div>
                 <Link to='/appliedJobs'><button className='bg-violet-200 rounded-md p-2'>Apply Now</button></Link>
             </div>

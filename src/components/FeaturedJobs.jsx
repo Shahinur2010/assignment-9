@@ -13,7 +13,7 @@ const FeaturedJobs = ({ featuredJobs }) => {
     }
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto'>
             {jobs.map(featuredJob => <FeaturedJob key={featuredJob.id} featuredJob={featuredJob}>
             </FeaturedJob>)}
             <button onClick={handleAllJobs} className='bg-violet-200 rounded-md p-2 my-4 mx-auto'>See All Jobs</button>
