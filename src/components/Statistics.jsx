@@ -24,13 +24,6 @@ const Statistics = () => {
           <Tooltip />
           <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#8884d8" />
         </AreaChart>
-             {/* আপনি নিচের স্টেপ গুলো ফলো করুন
-আপনি useParams() টা explore করুন।
-https://m.facebook.com/groups/phwebdevelopmentbatch7/permalink/1313088012579614/?mibextid=Nif5অয
-১) main.jsx এ যে পেজ এ details দেখাবেন সে পেজটার route dynamic রাখবেন।
-২) যে পেজ এ view details button আছে সেটাতে ক্লিক করার সময় id টা পাঠিয়ে দিবেন
-৩) details পেজ এ useParams থেকে id টা নিবেন এবং useEffect করে ডাটা নিয়ে সেখানে find চালাই দিবেন।
-  */}
         </div>
     );
 };

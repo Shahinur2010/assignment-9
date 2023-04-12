@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAddressBook, faMoneyBill, faPhone, faStarOfLife, faVoicemail } from '@fortawesome/free-solid-svg-icons'
+import { faBangladeshiTakaSign, faBusinessTime, faEnvelope, faHome,  faPhone } from '@fortawesome/free-solid-svg-icons'
+import { addToDb } from '../utilities/fakedb';
 
 
 const Job = () => {
@@ -24,24 +25,23 @@ const [data, setData] = useState([]);
         <div>
             <h1 className='text-center font-semibold text-4xl my-2'>Job Details</h1>
             <div className='flex'>
-                <div className='text-start my-2 p-4'>
-                    <p>Job description: {jobDescription}</p>
-                    <p>Job Responsibility: {jobResponsibility}</p>
-                    <p>Educational Requirements: {educationalRequirements
+                <div className='text-start text-lg w-[60%] p-8'>
+                    <p className='mb-2'><small className='font-semibold text-lg'>Job description:</small> {jobDescription}</p>
+                    <p className='mb-2'><small className='font-semibold text-lg'>Job Responsibility:</small> {jobResponsibility}</p>
+                    <p className='mb-2'><small className='font-semibold text-lg'>Educational Requirements:</small> {educationalRequirements
                     }</p>
-                    <p>Experience: {experience}</p>
+                    <p><small className='font-semibold text-lg'>Experience:</small> {experience}</p>
                 </div>
-                <div className='text-center'>
-                    <h1>Job Details</h1>
-                    <p>Salary: <FontAwesomeIcon className='w-6 h-6' icon={faMoneyBill} />{salary}</p>
-                    <p>Job Title: <FontAwesomeIcon className='w-6 h-6' icon={faStarOfLife} />{jobTitle}</p>
-                    <br />
-                    <h1>Contact Information</h1>
-                    <p>Phone: <FontAwesomeIcon className='w-6 h-6' icon={faPhone} />{contactInfo?.phone}</p>
-                    <p>Email: <FontAwesomeIcon className='w-6 h-6' icon={faVoicemail} />{contactInfo?.email}</p>
-                    <p>Address: <FontAwesomeIcon className='w-6 h-6' icon={faAddressBook} />{location}</p>
-                </div>
-                <Link to='/appliedJobs'><button className='bg-violet-200 rounded-md p-2'>Apply Now</button></Link>
+                <div className='text-start text-lg mt-6'>
+                    <h1 className='font-semibold my-2'>Job Details</h1>
+                    <p>Salary: <FontAwesomeIcon className='w-4 h-4' icon={faBangladeshiTakaSign} /> {salary}</p>
+                    <p>Job Title: <FontAwesomeIcon className='w-4 h-4' icon={faBusinessTime} /> {jobTitle}</p>
+                    <h1 className='font-semibold mt-2'>Contact Information</h1>
+                    <p>Phone: <FontAwesomeIcon className='w-4 h-4' icon={faPhone} />{contactInfo?.phone} </p>
+                    <p>Email: <FontAwesomeIcon className='w-4 h-4' icon={faEnvelope} /> {contactInfo?.email}</p>
+                    <p>Address: <FontAwesomeIcon className='w-4 h-4' icon={faHome} /> {location}</p>
+                    <Link to='/appliedJobs'><button onClick={addToDb(id)} className='bg-violet-200 rounded-md p-2 my-1'>Apply Now</button></Link>
+                </div>              
             </div>
         </div>
     );

@@ -1,74 +1,46 @@
 // use local storage to manage cart data
 const addToDb = id => {
-    let shoppingCart = getShoppingCart();
+    let appliedJob = getAppliedJob();
     // add quantity
-    const quantity = shoppingCart[id];
+    const quantity = appliedJob[id];
     if (!quantity) {
-        shoppingCart[id] = 1;
+        appliedJob[id] = 1;
     }
     else {
         const newQuantity = quantity + 1;
-        shoppingCart[id] = newQuantity;
+        appliedJob[id] = newQuantity;
     }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+    localStorage.setItem('applied-job', JSON.stringify(appliedJob));
 }
 
 const removeFromDb = id => {
-    const shoppingCart = getShoppingCart();
-    if (id in shoppingCart) {
-        delete shoppingCart[id];
-        localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+    const appliedJob = getAppliedJob();
+    if (id in appliedJob) {
+        delete appliedJob[id];
+        localStorage.setItem('applied-job', JSON.stringify(appliedJob));
     }
 }
 
-const getShoppingCart = () => {
-    let shoppingCart = {};
+const getAppliedJob = () => {
+    let appliedJob = {};
 
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart');
-    if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
+    const storedJob = localStorage.getItem('applied-job');
+    if (storedJob) {
+        appliedJob = JSON.parse(storedJob);
     }
-    return shoppingCart;
+    return appliedJob;
 }
 
-const deleteShoppingCart = () => {
-    localStorage.removeItem('shopping-cart');
+const deleteAppliedJob = () => {
+    localStorage.removeItem('applied-job');
 }
 
 export {
     addToDb,
     removeFromDb,
-    getShoppingCart,
-    deleteShoppingCart
+    getAppliedJob,
+    deleteAppliedJob
 }
 
 
-// import { getShoppingCart } from "../utilities/fakedb";
-
-// const cartProductsLoader = async() =>{
-// const loadedProducts = await fetch ('products.json');
-// const products = await loadedProducts.json();
-
-// // if cart data is in database, async await should be used
-// const storedCart = getShoppingCart();
-// const savedCart = [];
-
-// for(const id in storedCart){
-//     const addedProduct = products.find(pd => pd.id === id)
-//     if(addedProduct){
-//         const quantity = storedCart[id];
-//         addedProduct.quantity = quantity;
-//         savedCart.push(addedProduct);
-//     }
-// }
-
-// // if needed multiple return
-// // return [products, savedCart]
-// // another Option
-// // return {products, cart: savedCart}
-
-// return savedCart;
-// }
-
-// export default cartProductsLoader;
