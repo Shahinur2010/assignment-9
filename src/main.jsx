@@ -15,7 +15,7 @@ import AppliedJobs from './components/AppliedJobs';
 import FeaturedJobs from './components/FeaturedJobs';
 import Job from './components/Job';
 import JobCategoryList from './components/JobCategoryList';
-import appliedJobsLoader from './loaders/appliedJobsLoader';
+// import appliedJobsLoader from './loaders/appliedJobsLoader';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <JobCategoryList></JobCategoryList>,
       },
       {
-        path: '/job/:id',
+        path: '/job/:jobId',
         element: <Job></Job>,
         loader: ({params})=> fetch(`/featuredJobs.json`)
       },
@@ -44,7 +44,8 @@ const router = createBrowserRouter([
       {
         path: '/appliedJobs',
         element: <AppliedJobs></AppliedJobs>,
-        loader: appliedJobsLoader
+        // loader: appliedJobsLoader
+        loader: () => fetch('/featuredJobs.json')
       },
       {
         path: '/blogs',
