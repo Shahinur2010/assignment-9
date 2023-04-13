@@ -1,19 +1,13 @@
 const addToDb = id => {
     let appliedJob = getAppliedJob();
-    
-    const quantity = appliedJob[id];
-    if (!quantity) {
-        appliedJob[id] = 1;
-    }
-    else {
-        const newQuantity = quantity + 1;
-        appliedJob[id] = newQuantity;
+    if (!appliedJob.find(job => job.id == id.id)) {
+        appliedJob.push(id);
     }
     localStorage.setItem('applied-job', JSON.stringify(appliedJob));
 }
 
 const getAppliedJob = () => {
-    let appliedJob = {};
+    let appliedJob = [];
 
     const storedJob = localStorage.getItem('applied-job');
     if (storedJob) {
@@ -22,6 +16,6 @@ const getAppliedJob = () => {
     return appliedJob;
 }
 
-export {addToDb, getAppliedJob}
+export { addToDb, getAppliedJob }
 
 

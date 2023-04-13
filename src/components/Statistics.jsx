@@ -1,4 +1,6 @@
 import React from 'react';
+import bannerImage1 from '../assets/assets/All Images/Vector-1.png';
+import bannerImage from '../assets/assets/All Images/Vector.png';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { useLoaderData } from 'react-router-dom';
 
@@ -7,7 +9,12 @@ const Statistics = () => {
 
     return (
         <div>
-            <h1 className='text-center font-bold text-3xl my-3'>Assignment Marks</h1>
+          <div className='h-56 bg-purple-200 mb-4'>
+                <img className='h-16 ms-auto' src={bannerImage1} alt="" />
+                <h1 className='text-center font-bold text-3xl my-3'>Assignment Marks</h1>
+                <img className='h-16' src={bannerImage}alt="" />
+            </div>
+            
             <AreaChart className='mx-auto my-8'
           width={500}
           height={400}

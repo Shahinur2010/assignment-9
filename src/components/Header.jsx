@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 const Header = () => {
     return (
         <div className='text-center'>
-            <nav className='mx-auto p-4 bg-purple-400 flex flex-col justify-evenly md:flex-row md:justify-around text-xl font-semibold'>
+            <nav className='mx-auto p-4 bg-purple-200 flex flex-col justify-evenly md:flex-row md:justify-around text-xl font-semibold'>
                 <h1 className='text-4xl font-bold'>Job Circular</h1>
             <div className='flex flex-col justify-center md:flex-row md:justify-center gap-8 text-center'>
             <Link to='/'>Home</Link>
